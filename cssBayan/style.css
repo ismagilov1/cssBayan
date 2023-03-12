@@ -27,7 +27,7 @@ h3{
     justify-content: space-around;
     text-align: center;
 }
-.accord__items-mem:hover img{
+.accord__items-mem:hover img, .accord__items-mem:focus img{
     height: 350px;
 }
 .accord__items-mem{
