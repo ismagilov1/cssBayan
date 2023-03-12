@@ -8,15 +8,28 @@ body{
     background-color: blanchedalmond;
 }
 img{
-    height: 0px;
+    max-width: 0px;
     transition: 0.4s;
 }
 h3{
     padding: 9px;
+    font-size: 22px;
 }
 .accord {
     margin: 0 auto;
     max-width: 1920px;
+}
+@media (max-width:820px) and (min-width:321px){
+    h3 {
+        padding: 7px;
+        font-size: 19px;
+    }
+}
+@media (max-width:320px){
+    h3 {
+        padding: 5px;
+        font-size: 17px;
+    }
 }
 .accord:hover{
     color: black;
@@ -28,7 +41,7 @@ h3{
     text-align: center;
 }
 .accord__items-mem:hover img, .accord__items-mem:focus img{
-    height: 350px;
+    max-width: 300px;
 }
 .accord__items-mem{
     color: blue;
