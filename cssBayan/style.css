@@ -4,14 +4,19 @@
     margin: 0;
     border: 0;
 }
+body{
+    background-color: blanchedalmond;
+}
 img{
     height: 0px;
     transition: 0.4s;
 }
+h3{
+    padding: 9px;
+}
 .accord {
     margin: 0 auto;
     max-width: 1920px;
-    color: blue;
 }
 .accord:hover{
     color: black;
@@ -24,4 +29,23 @@ img{
 }
 .accord__items-mem:hover img{
     height: 350px;
+}
+.accord__items-mem{
+    color: blue;
+    transition: 0.1s;
+    border-top: 1px solid grey;
+}
+.accord__items-mem:hover{
+    color: black;
+    transition: 0.1s;
+}
+.after_icon{
+    display: flex;
+    justify-content: space-between;
+}
+.accord:hover .after_icon::after{
+    content: '+';
+}
+.accord__items-mem:hover .after_icon::after{
+    content: '-';
 }
